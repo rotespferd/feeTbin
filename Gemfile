@@ -7,3 +7,7 @@ gem 'feedzirra'
 group :test do
   gem 'rspec'
 end
+
+group 'debug' do
+  gem 'pry'
+end
