@@ -10,6 +10,6 @@ group :test do
   gem 'rspec'
 end
 
-group 'debug' do
+group :debug do
   gem 'pry'
 end
