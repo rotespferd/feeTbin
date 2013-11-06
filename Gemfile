@@ -5,6 +5,8 @@ gem 'feedzirra'
 
 gem 'thor'
 
+gem 'rake'
+
 # for testing
 group :test do
   gem 'rspec'
