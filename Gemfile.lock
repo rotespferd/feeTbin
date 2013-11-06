@@ -20,6 +20,7 @@ GEM
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
+    rake (10.0.3)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rspec (2.14.1)
@@ -41,6 +42,7 @@ PLATFORMS
 DEPENDENCIES
   feedzirra
   pry
+  rake
   rest-client
   rspec
   thor
