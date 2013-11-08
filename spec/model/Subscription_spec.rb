@@ -50,4 +50,29 @@ describe Subscription do
       expect(sub.created_at).to equal(nil)
     end
   end
+
+  # specs for property feed_id
+  describe 'property feed_id' do
+    it 'should have set and get' do
+      sub = Subscription.new
+
+      sub.feed_id = 4242
+
+      expect(sub.feed_id).to eq(4242)
+    end
+
+    it 'should be a Fixnum' do
+      sub = Subscription.new
+      sub.feed_id = 4242
+
+      expect(sub.feed_id).to be_a(Fixnum)
+    end
+
+    it 'should not set if not a Fixnum' do
+      sub = Subscription.new
+      sub.feed_id = "lol"
+
+      expect(sub.feed_id).to equal(nil)
+    end
+  end
 end
